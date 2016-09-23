@@ -13,7 +13,7 @@ echo 'mode: atomic' > coverage.txt && go list ./... | xargs -n1 -I{} sh -c 'go t
 
 If you use [ginkgo](https://onsi.github.io/ginkgo/), then you can use this utility do to the next steps:
 * run `ginkgo -cover -r`
-* concatenate all *\*.coverprofile* into *all_coverage.coverprofile*
+* concatenate all **.coverprofile* into *all_coverage.coverprofile*
 * remove all excess lines with `mode: atomic`
 * make *coverage.html* file with `go tool cover` utility
 
